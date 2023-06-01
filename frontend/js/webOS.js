@@ -74,6 +74,7 @@
             getDeviceProfile: function (profileBuilder) {
                 postMessage('AppHost.getDeviceProfile');
                 return profileBuilder({
+                    canPlayNativeHls: true,
                     canPlayMkv: true,
                     canPlayHevc: true,
                     enableMkvProgressive: false,
