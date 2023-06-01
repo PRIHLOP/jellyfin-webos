@@ -74,6 +74,8 @@
             getDeviceProfile: function (profileBuilder) {
                 postMessage('AppHost.getDeviceProfile');
                 return profileBuilder({
+                    canPlayMkv: true,
+                    canPlayHevc: true,
                     enableMkvProgressive: false,
                     enableSsaRender: true,
                     supportsDolbyAtmos: deviceInfo ? deviceInfo.dolbyAtmos : null,
